@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle, Shield, Zap, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import founderImage from 'figma:asset/dcc393022541a6ebcefdd28819d9b3dcf6c9d468.png';
+// import founderImage from 'figma:asset/dcc393022541a6ebcefdd28819d9b3dcf6c9d468.png';
 
 // Hero Background
 const HERO_IMAGE = "https://images.unsplash.com/photo-1758304481516-36a98d9595b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZWxlY3RyaWMlMjBjYWJsZXMlMjBmYWN0b3J5JTIwd2FyZWhvdXNlfGVufDF8fHx8MTc2NTk0ODk4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
@@ -93,7 +93,7 @@ export const HomePage = () => {
             >
               <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl border-b-8 border-[#FFD600]">
                  {/* Use ImageWithFallback but with the imported asset directly as src */}
-                 <img src={founderImage} alt="Ram Awadh Jaiswal" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
+                 {/* <img src={founderImage} alt="Ram Awadh Jaiswal" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" /> */}
               </div>
               {/* Image Backdrops */}
               <div className="absolute -top-6 -left-6 w-full h-full border-4 border-[#1A1A1A] z-0" />

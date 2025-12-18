@@ -2,9 +2,9 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Filter, Search, X, ShoppingCart, Check, Info } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
-import frImage from 'figma:asset/a0b70875bc85d5749bb508f08acc0d5ad585ec5e.png';
-import frlsImage from 'figma:asset/b899cea5c6513ab96b3972f75ad1c51d9dd1859d.png';
-import multicoreImage from 'figma:asset/dba957405fb5a93250a44a8c23ed202faf8bc952.png';
+// import frImage from 'figma:asset/a0b70875bc85d5749bb508f08acc0d5ad585ec5e.png';
+// import frlsImage from 'figma:asset/b899cea5c6513ab96b3972f75ad1c51d9dd1859d.png';
+// import multicoreImage from 'figma:asset/dba957405fb5a93250a44a8c23ed202faf8bc952.png';
 
 // Types
 interface Product {
@@ -26,7 +26,7 @@ const PRODUCTS: Product[] = [
     category: 'Wires',
     type: 'fr-pvc',
     basePrice: 850,
-    image: frImage,
+    // image: frImage,
     description: 'Flame Retardant (FR) PVC insulated cables designed for superior protection against fire.',
     features: ['High Insulation Resistance', 'Flame Retardant', 'Energy Efficient']
   },
@@ -36,7 +36,7 @@ const PRODUCTS: Product[] = [
     category: 'Wires',
     type: 'frls-pvc',
     basePrice: 950,
-    image: frlsImage,
+    // image: frlsImage,
     description: 'Flame Retardant Low Smoke (FRLS) cables that ensure low smoke emission during fire.',
     features: ['Low Smoke Emission', 'High Oxygen Index', 'Self Extinguishing']
   },
@@ -66,7 +66,7 @@ const PRODUCTS: Product[] = [
     category: 'Wires',
     type: 'multicore',
     basePrice: 1800,
-    image: multicoreImage,
+    // image: multicoreImage,
     description: 'Flexible multicore cables for industrial appliances and machinery.',
     features: ['Flexible', 'Durable', 'Oil Resistant']
   },
