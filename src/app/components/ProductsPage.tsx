@@ -12,7 +12,12 @@ import {
 } from './ui/select';
 import { EnquiryDialog } from './EnquiryDialog';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-
+import coaxiall from '../../assets/coaxiall.jpeg';
+import frlss from '../../assets/frlss.jpeg';
+import frr from '../../assets/frr.jpeg';
+import multicoree from '../../assets/multicoree.jpeg';
+import submersiblee from '../../assets/submersiblee.jpeg';
+import zhfrr from '../../assets/zhfrr.jpeg';
 export function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
@@ -67,7 +72,7 @@ export function ProductsPage() {
       category: 'single',
       description: 'Fire retardant single core copper wire with ISI certification',
       features: ['99.97% Pure Copper', 'Fire Retardant', 'BIS ISI 694 Certified'],
-      image: 'https://images.unsplash.com/photo-1761507320645-b11a00bfcc34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2FsJTIwd2lyZSUyMGNvbG9yc3xlbnwxfHx8fDE3NjU4OTU1MzF8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: submersiblee,
     },
     {
       id: 2,
@@ -75,7 +80,7 @@ export function ProductsPage() {
       category: 'multi',
       description: 'Heavy duty multi core wire for industrial applications',
       features: ['High Conductivity', 'Durable', 'Long Lasting'],
-      image: 'https://images.unsplash.com/photo-1764866085369-44c7ef1a18f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2FsJTIwY2FibGVzJTIwY29wcGVyJTIwd2lyZXxlbnwxfHx8fDE3NjU4OTU1MzB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: multicoree,
     },
     {
       id: 3,
@@ -83,7 +88,7 @@ export function ProductsPage() {
       category: 'flexible',
       description: 'Maximum flexibility for complex installations',
       features: ['Highly Flexible', 'Easy Installation', 'Premium Quality'],
-      image: 'https://images.unsplash.com/photo-1696150874769-ea4f30453c2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWJsZSUyMGNyb3NzJTIwc2VjdGlvbnxlbnwxfHx8fDE3NjU4OTU1MzF8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: frr,
     },
     {
       id: 4,
@@ -91,7 +96,7 @@ export function ProductsPage() {
       category: 'aluminium',
       description: 'Cost-effective solution for various applications',
       features: ['Lightweight', 'Cost-Effective', 'Reliable'],
-      image: 'https://images.unsplash.com/photo-1764636760258-a6ffd5ba416e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc2FmZXR5JTIweWVsbG93fGVufDF8fHx8MTc2NTg5NTUzMnww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: frlss,
     },
   ];
 
