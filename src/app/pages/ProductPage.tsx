@@ -2,9 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Filter, Search, X, ShoppingCart, Check, Info } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
-// import frImage from 'figma:asset/a0b70875bc85d5749bb508f08acc0d5ad585ec5e.png';
-// import frlsImage from 'figma:asset/b899cea5c6513ab96b3972f75ad1c51d9dd1859d.png';
-// import multicoreImage from 'figma:asset/dba957405fb5a93250a44a8c23ed202faf8bc952.png';
+
 
 // Types
 interface Product {
@@ -26,7 +24,7 @@ const PRODUCTS: Product[] = [
     category: 'Wires',
     type: 'fr-pvc',
     basePrice: 850,
-    // image: frImage,
+    image: 'https://i.postimg.cc/Gt2sT1m3/frr.jpg',
     description: 'Flame Retardant (FR) PVC insulated cables designed for superior protection against fire.',
     features: ['High Insulation Resistance', 'Flame Retardant', 'Energy Efficient']
   },
@@ -36,7 +34,7 @@ const PRODUCTS: Product[] = [
     category: 'Wires',
     type: 'frls-pvc',
     basePrice: 950,
-    // image: frlsImage,
+    image: 'https://i.postimg.cc/NFMr2wj2/frlss.jpg',
     description: 'Flame Retardant Low Smoke (FRLS) cables that ensure low smoke emission during fire.',
     features: ['Low Smoke Emission', 'High Oxygen Index', 'Self Extinguishing']
   },
@@ -46,7 +44,7 @@ const PRODUCTS: Product[] = [
     category: 'Wires',
     type: 'zhfr-pvc',
     basePrice: 1100,
-    image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800',
+    image: 'https://i.postimg.cc/pTkFddRh/zhfrr.jpg',
     description: 'Zero Halogen Flame Retardant (ZHFR) cables for eco-friendly and safe wiring.',
     features: ['Zero Halogen', 'Non-Toxic Smoke', 'High Heat Resistance']
   },
@@ -56,7 +54,7 @@ const PRODUCTS: Product[] = [
     category: 'Cables',
     type: 'submersible',
     basePrice: 2500,
-    image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800',
+    image: 'https://i.postimg.cc/gJ4Z00mp/submersiblee.jpg',
     description: 'Heavy duty flat cables designed for submersible pumps and motors.',
     features: ['Water Resistant', 'Tough Outer Sheath', 'Flexible']
   },
@@ -66,7 +64,7 @@ const PRODUCTS: Product[] = [
     category: 'Wires',
     type: 'multicore',
     basePrice: 1800,
-    // image: multicoreImage,
+    image: 'https://i.postimg.cc/qqRC6dvM/multicoree.jpg',
     description: 'Flexible multicore cables for industrial appliances and machinery.',
     features: ['Flexible', 'Durable', 'Oil Resistant']
   },
@@ -76,7 +74,7 @@ const PRODUCTS: Product[] = [
     category: 'Cables',
     type: 'coaxial',
     basePrice: 600,
-    image: 'https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&q=80&w=800',
+    image: 'https://i.postimg.cc/XqJyB0Yj/coaxiall.jpg',
     description: 'High quality coaxial cables for clear signal transmission in TV and data.',
     features: ['Low Signal Loss', 'High Bandwidth', 'Weather Proof']
   }
