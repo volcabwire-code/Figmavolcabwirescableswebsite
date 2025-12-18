@@ -12,12 +12,7 @@ import {
 } from './ui/select';
 import { EnquiryDialog } from './EnquiryDialog';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import coaxiall from '../../assets/coaxiall.jpeg';
-import frlss from '../../assets/frlss.jpeg';
-import frr from '../../assets/frr.jpeg';
-import multicoree from '../../assets/multicoree.jpeg';
-import submersiblee from '../../assets/submersiblee.jpeg';
-import zhfrr from '../../assets/zhfrr.jpeg';
+
 export function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
@@ -72,7 +67,7 @@ export function ProductsPage() {
       category: 'single',
       description: 'Fire retardant single core copper wire with ISI certification',
       features: ['99.97% Pure Copper', 'Fire Retardant', 'BIS ISI 694 Certified'],
-      image: submersiblee,
+      image: 'https://i.postimg.cc/Gt2sT1m3/frr.jpg',
     },
     {
       id: 2,
@@ -80,7 +75,7 @@ export function ProductsPage() {
       category: 'multi',
       description: 'Heavy duty multi core wire for industrial applications',
       features: ['High Conductivity', 'Durable', 'Long Lasting'],
-      image: multicoree,
+      image: 'https://i.postimg.cc/qqRC6dvM/multicoree.jpg',
     },
     {
       id: 3,
@@ -88,7 +83,7 @@ export function ProductsPage() {
       category: 'flexible',
       description: 'Maximum flexibility for complex installations',
       features: ['Highly Flexible', 'Easy Installation', 'Premium Quality'],
-      image: frr,
+      image: 'https://i.postimg.cc/pTkFddRh/zhfrr.jpg',
     },
     {
       id: 4,
@@ -96,7 +91,7 @@ export function ProductsPage() {
       category: 'aluminium',
       description: 'Cost-effective solution for various applications',
       features: ['Lightweight', 'Cost-Effective', 'Reliable'],
-      image: frlss,
+      image: 'https://i.postimg.cc/pTkFddRh/zhfrr.jpg',
     },
   ];
 
